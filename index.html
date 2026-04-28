@@ -2,49 +2,112 @@
 <html>
 <head>
   <title>Dharmendra Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
     }
+
     header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
       background: #2c3e50;
       color: white;
-      padding: 20px;
-    }
-    section {
-      padding: 20px;
-    }
-    h1, h2 {
-      margin: 10px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Dharmendra Bhadoriya</h1>
-  <p>Cisco Meraki Network Engineer</p>
+  <p>Cisco Meraki Network Engineer | SME</p>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>I am a Cisco Meraki SME with experience in MX, MS, MR devices and network monitoring.</p>
-</section>
+<div class="container">
 
-<section>
-  <h2>Projects</h2>
-  <p>✔ Multi-location network setup (Delhi, Mumbai, Pune)</p>
-  <p>✔ Monitoring & Alerts using Zoho 24x7</p>
-</section>
+  <div class="card">
+    <h2>👨‍💻 About Me</h2>
+    <p>I am a Cisco Meraki SME with hands-on experience in MX, MS, MR devices, monitoring, and troubleshooting enterprise networks.</p>
+  </div>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: yourmail@gmail.com</p>
-</section>
+  <div class="card">
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li>Cisco Meraki (MX, MS, MR)</li>
+      <li>Routing & Switching</li>
+      <li>VLAN, VPN, Firewall</li>
+      <li>Monitoring (Zoho 24x7)</li>
+      <li>Troubleshooting & RCA</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📂 Projects</h2>
+    <ul>
+      <li>Multi-location network setup (Delhi, Mumbai, Pune)</li>
+      <li>Alert monitoring & incident handling</li>
+      <li>Network troubleshooting scenarios</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📸 Work Proof</h2>
+    <p>(Add screenshots here later)</p>
+  </div>
+
+  <div class="card">
+    <h2>📫 Contact</h2>
+    <p>Email: yourmail@gmail.com</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Dharmendra | Portfolio</p>
+</footer>
 
 </body>
 </html>
