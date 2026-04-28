@@ -8,53 +8,68 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f5f7fa;
+      background: #eef2f7;
     }
 
     header {
-      background: linear-gradient(135deg, #2c3e50, #3498db);
+      background: linear-gradient(135deg, #1d3557, #457b9d);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 34px;
     }
 
     header p {
       margin-top: 10px;
       font-size: 18px;
+      opacity: 0.9;
     }
 
     .container {
-      padding: 30px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
     .card {
       background: white;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    /* 🔥 Hover effect */
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
     h2 {
-      color: #2c3e50;
+      color: #1d3557;
+      margin-bottom: 10px;
     }
 
     ul {
-      padding-left: 20px;
+      padding-left: 18px;
     }
 
     footer {
       text-align: center;
       padding: 15px;
-      background: #2c3e50;
+      background: #1d3557;
       color: white;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -68,39 +83,42 @@
 
 <div class="container">
 
-  <div class="card">
-    <h2>👨‍💻 About Me</h2>
-    <p>I am a Cisco Meraki SME with hands-on experience in MX, MS, MR devices, monitoring, and troubleshooting enterprise networks.</p>
-  </div>
+  <div class="grid">
 
-  <div class="card">
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Cisco Meraki (MX, MS, MR)</li>
-      <li>Routing & Switching</li>
-      <li>VLAN, VPN, Firewall</li>
-      <li>Monitoring (Zoho 24x7)</li>
-      <li>Troubleshooting & RCA</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h2>👨‍💻 About Me</h2>
+      <p>Experienced in managing Cisco Meraki MX, MS, MR devices and enterprise network monitoring.</p>
+    </div>
 
-  <div class="card">
-    <h2>📂 Projects</h2>
-    <ul>
-      <li>Multi-location network setup (Delhi, Mumbai, Pune)</li>
-      <li>Alert monitoring & incident handling</li>
-      <li>Network troubleshooting scenarios</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>Meraki (MX, MS, MR)</li>
+        <li>VLAN, VPN, Firewall</li>
+        <li>Routing & Switching</li>
+        <li>Zoho Monitoring</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>📸 Work Proof</h2>
-    <p>(Add screenshots here later)</p>
-  </div>
+    <div class="card">
+      <h2>📂 Projects</h2>
+      <ul>
+        <li>Multi-location setup (Delhi, Mumbai, Pune)</li>
+        <li>Alert monitoring & RCA</li>
+        <li>Network troubleshooting</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h2>📫 Contact</h2>
-    <p>Email: yourmail@gmail.com</p>
+    <div class="card">
+      <h2>📸 Work Proof</h2>
+      <p>Add your Meraki dashboard screenshots here</p>
+    </div>
+
+    <div class="card">
+      <h2>📫 Contact</h2>
+      <p>Email: yourmail@gmail.com</p>
+    </div>
+
   </div>
 
 </div>
